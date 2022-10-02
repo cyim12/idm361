@@ -1,0 +1,56 @@
+body {
+	background-color:#B1D1E1;
+}
+
+#content {
+	width: 320px;
+	margin: 10px auto;
+}
+
+#face {
+	width: 100px;
+	height: 100px;
+	margin: 90px auto 10px;
+	background: url(img/face_smile.svg);
+}
+
+#output {
+	text-align: center;
+}
+
+@media only screen and (orientation:portrait) {
+	body {
+		background-color: #B1D1E1;
+	}
+
+	#face {
+		margin: 90px auto 10px;
+		background: url(img/face_smile.svg);
+	}
+
+	#output:after {
+		content: 'PORTRAIT';
+	}
+}
+
+@media only screen and (orientation:landscape) {
+	body {
+		background-color: #dfd0bb;
+	}
+
+	#content {
+		width: 600px;
+	}
+
+	#face {
+		width: 500px;
+		height: 300px;
+		margin: 40px auto 10px;
+		background: url(img/digitalTimer.jpeg);
+		background-position: center;
+		background-size: contain;
+	}
+	#output:after {
+		content: 'LANDSCAPE';
+	}
+}
