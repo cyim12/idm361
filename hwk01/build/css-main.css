@@ -1,5 +1,5 @@
 body {
-	background-color:#B1D1E1;
+	background-color:#F1E9DE;
 }
 
 #content {
@@ -22,7 +22,7 @@ body {
 
 @media only screen and (orientation:portrait) {
 	body {
-		background-color: #f9f4ed;
+		background-color: #F1E9DE;
 	}
 
 	#face {
