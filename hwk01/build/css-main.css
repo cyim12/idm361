@@ -8,10 +8,12 @@ body {
 }
 
 #face {
-	width: 100px;
-	height: 100px;
-	margin: 90px auto 10px;
-	background: url(img/face_smile.svg);
+	width: 280px;
+	height: 660px;
+	margin: 80px auto 12px;
+	background: url(img/toDo.jpeg);
+	background-size: contain;
+	background-position: center;
 }
 
 #output {
@@ -20,12 +22,16 @@ body {
 
 @media only screen and (orientation:portrait) {
 	body {
-		background-color: #B1D1E1;
+		background-color: #f9f4ed;
 	}
 
 	#face {
-		margin: 90px auto 10px;
-		background: url(img/face_smile.svg);
+		background: url(img/toDo.jpeg);
+		width: 280px;
+		height: 560px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	#output:after {
@@ -35,7 +41,7 @@ body {
 
 @media only screen and (orientation:landscape) {
 	body {
-		background-color: #dfd0bb;
+		background-color: #d1c6b6;
 	}
 
 	#content {
