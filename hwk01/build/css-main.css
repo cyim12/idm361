@@ -1,16 +1,30 @@
 body {
-	background-color:#F1E9DE;
+	background-color:#6D7A71;
+	font-family: "forma-djr-display",sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	margin-top: 80px;
+	color: #6D7A71;
 }
 
+/* h1 {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 50px;
+	color: #DECFC1;
+	letter-spacing: 2px;
+} */
+
 #content {
-	width: 320px;
+	width: 310px;
+	height: 500px;
 	margin: 10px auto;
 }
 
 #face {
-	width: 280px;
-	height: 660px;
-	margin: 80px auto 12px;
+	width: 310px;
+	height: 500px;
+	margin: 20px auto 12px;
 	background: url(img/toDo.jpeg);
 	background-size: contain;
 	background-position: center;
@@ -18,45 +32,60 @@ body {
 
 #output {
 	text-align: center;
+	letter-spacing: 10px;
 }
 
 @media only screen and (orientation:portrait) {
 	body {
-		background-color: #F1E9DE;
+		background-color: #6D7A71;
 	}
 
 	#face {
 		background: url(img/toDo.jpeg);
 		width: 280px;
-		height: 560px;
+		height: 500px;
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
 	}
 
 	#output:after {
-		content: 'PORTRAIT';
+		content: 'TASKS';
+		font-size: 20px;
+		color: #DECFC1;
 	}
 }
 
 @media only screen and (orientation:landscape) {
 	body {
-		background-color: #6D7A71;
+		background-color: #DECFC1;
+		margin-top: 30px;
 	}
+
+	/* h1 {
+		color: #BC7F6A;
+		margin-bottom: 15px;
+		font-size: 30px;
+	} */
 
 	#content {
 		width: 600px;
+		height: 310px;
+		margin: 10px auto;
 	}
 
 	#face {
-		width: 500px;
-		height: 300px;
-		margin: 40px auto 10px;
+		width: 620px;
+		height: 280px;
+		margin: 20px auto 0px;
 		background: url(img/digitalTimer.jpeg);
 		background-position: center;
 		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	#output:after {
-		content: 'LANDSCAPE';
+		content: 'POMODORO TIMER';
+		font-size: 20px;
+		color: #BC7F6A;
 	}
 }
