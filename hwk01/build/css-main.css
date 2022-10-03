@@ -3,7 +3,7 @@ body {
 	font-family: "forma-djr-display",sans-serif;
 	font-weight: 500;
 	font-style: normal;
-	margin-top: 80px;
+	margin-top: 60px;
 	color: #6D7A71;
 }
 
@@ -16,15 +16,15 @@ body {
 } */
 
 #content {
-	width: 340px;
-	height: 548px;
+	width: 330px;
+	height: 532px;
 	margin: 10px auto;
 }
 
 #face {
-	width: 340px;
-	height: 548px;
-	margin: 20px auto 12px;
+	width: 330px;
+	height: 532px;
+	margin: 10px auto 12px;
 	background: url(img/toDoList.svg);
 	background-size: contain;
 	background-position: center;
@@ -42,8 +42,8 @@ body {
 
 	#face {
 		background: url(img/toDoList.svg);
-		width: 340px;
-		height: 548px;
+		width: 330px;
+		height: 532px;
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -77,7 +77,7 @@ body {
 	#face {
 		width: 620px;
 		height: 280px;
-		margin: 20px auto 0px;
+		margin: 10px auto 0px;
 		background: url(img/pomodoroTimer.svg);
 		background-position: center;
 		background-size: contain;
