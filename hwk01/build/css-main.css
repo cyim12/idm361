@@ -16,14 +16,14 @@ body {
 } */
 
 #content {
-	width: 310px;
-	height: 500px;
+	width: 340px;
+	height: 548px;
 	margin: 10px auto;
 }
 
 #face {
-	width: 310px;
-	height: 500px;
+	width: 340px;
+	height: 548px;
 	margin: 20px auto 12px;
 	background: url(img/toDoList.svg);
 	background-size: contain;
@@ -42,8 +42,8 @@ body {
 
 	#face {
 		background: url(img/toDoList.svg);
-		width: 280px;
-		height: 500px;
+		width: 340px;
+		height: 548px;
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
