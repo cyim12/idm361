@@ -3,7 +3,7 @@ body {
 	font-family: "forma-djr-display",sans-serif;
 	font-weight: 500;
 	font-style: normal;
-	margin-top: 60px;
+	margin-top: 50px;
 	color: #6D7A71;
 }
 
@@ -16,14 +16,14 @@ body {
 } */
 
 #content {
-	width: 330px;
-	height: 532px;
+	width: 300px;
+	height: 484px;
 	margin: 10px auto;
 }
 
 #face {
-	width: 330px;
-	height: 532px;
+	width: 300px;
+	height: 484px;
 	margin: 10px auto 12px;
 	background: url(img/toDoList.svg);
 	background-size: contain;
@@ -42,8 +42,8 @@ body {
 
 	#face {
 		background: url(img/toDoList.svg);
-		width: 330px;
-		height: 532px;
+		width: 300px;
+	height: 484px;
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
