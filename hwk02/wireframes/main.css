@@ -67,8 +67,57 @@ h3 {
 
 img {
     margin: auto;
+    width: 100%;
 }
 
 .caption {
     width: 370px;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #6D7A71;
+        letter-spacing: 2px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #6D7A71;
+    }
+    
+    h3 {
+        text-align: left;
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 50px;
+        color: #6D7A71;
+    }
+    
+    #dimension {
+        text-align: center;
+        color: #BC7F6A;
+    }
+    
+    #content {
+        width: 80%;
+    }
+    
+    .wireframe {
+        margin: auto;
+    }
+    
+    img {
+        margin: auto;
+        width: 300px;
+    }
+    
+    .caption {
+        width: 300px;
+    }
 }
