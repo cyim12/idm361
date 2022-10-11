@@ -1,0 +1,74 @@
+/* FONTS */
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('/hwk02/build/fonts/LibreFranklin/LibreFranklin-Bold.ttf');
+    src: url('/hwk02/build/fonts/LibreFranklin/LibreFranklin-Bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+    }
+  
+  @font-face {
+    font-family: 'Libre Franklin';
+    src: url('/hwk02/build/fonts/LibreFranklin/LibreFranklin-Medium.ttf');
+    src: url('/hwk02/build/fonts/LibreFranklin/LibreFranklin-Medium.woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+	background-color:#DECFC1;
+	font-family: 'Libre Franklin',sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	margin-top: 50px;
+	color: #6D7A71;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: #6D7A71;
+	letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+	font-size: 30px;
+    font-weight: bold;
+	margin-bottom: 40px;
+	color: #6D7A71;
+}
+
+h3 {
+    text-align: left;
+	font-size: 20px;
+    font-weight: normal;
+	margin-bottom: 50px;
+	color: #6D7A71;
+}
+
+#dimension {
+    text-align: center;
+    color: #BC7F6A;
+}
+
+#content {
+	width: 60%;
+    height: auto;
+	margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wireframe {
+    margin: auto;
+}
+
+img {
+    margin: auto;
+}
+
+.caption {
+    width: 370px;
+}
