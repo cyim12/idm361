@@ -1,0 +1,93 @@
+/* FONTS */
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('/hwk02/build/fonts/LibreFranklin/LibreFranklin-Bold.ttf');
+  src: url('/hwk02/build/fonts/LibreFranklin/LibreFranklin-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+  }
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('/hwk02/build/fonts/LibreFranklin/LibreFranklin-Medium.ttf');
+  src: url('/hwk02/build/fonts/LibreFranklin/LibreFranklin-Medium.woff2');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  body {
+    background-color:#6D7A71;
+    font-family: 'Libre Franklin', Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #6D7A71;
+  }
+  
+  #content {
+    width: 300px;
+    height: 484px;
+    margin: 10px auto;
+  }
+  
+  #face {
+    width: 300px;
+    height: 484px;
+    margin: 10px auto 12px;
+    background: url(img/toDoList.svg);
+    background-size: contain;
+    background-position: center;
+  }
+  
+  #output {
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  
+  @media only screen and (orientation:portrait) {
+    body {
+      background-color: #6D7A71;
+    }
+  
+    #face {
+      background: url(img/toDoList.svg);
+      width: 300px;
+      height: 484px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  
+    #output:after {
+      content: 'TASKS';
+      font-size: 20px;
+      color: #DECFC1;
+    }
+  }
+  
+  @media only screen and (orientation:landscape) {
+    body {
+      background-color: #DECFC1;
+      margin-top: 30px;
+    }
+  
+    #content {
+      width: 600px;
+      height: 310px;
+      margin: 10px auto;
+    }
+  
+    #face {
+      width: 620px;
+      height: 280px;
+      margin: 10px auto 0px;
+      background: url(img/pomodoroTimer.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    #output:after {
+      content: 'POMODORO TIMER';
+      font-size: 20px;
+      color: #BC7F6A;
+    }
+  }
