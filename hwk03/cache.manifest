@@ -9,33 +9,33 @@ css-noramalize.css
 css-main.css
 
 # IMAGES
-/img/pomodoroTimer.svg
-/img/toDoList.svg
-/img/PomoFocus_icon_20x20.png
-/img/PomoFocus_icon_40x40.png
-/img/PomoFocus_icon_29x29.png
-/img/PomoFocus_icon_57x57.png
-/img/PomoFocus_icon_58x58.png
-/img/PomoFocus_icon_60x60.png
-/img/PomoFocus_icon_50x50.png
-/img/PomoFocus_icon_72x72.png
-/img/PomoFocus_icon_76x76.png
-/img/PomoFocus_icon_80x80.png
-/img/PomoFocus_icon_87x87.png
-/img/PomoFocus_icon_100x100.png
-/img/PomoFocus_icon_114x114.png
-/img/PomoFocus_icon_120x120.png
-/img/PomoFocus_icon_144x144.png
-/img/PomoFocus_icon_152x152.png
-/img/PomoFocus_icon_167x167.png
-/img/PomoFocus_icon_180x180.png
-/img/PomoFocus_icon_1024x1024.png
+img/pomodoroTimer.svg
+img/toDoList.svg
+img/PomoFocus_icon_20x20.png
+img/PomoFocus_icon_40x40.png
+img/PomoFocus_icon_29x29.png
+img/PomoFocus_icon_57x57.png
+img/PomoFocus_icon_58x58.png
+img/PomoFocus_icon_60x60.png
+img/PomoFocus_icon_50x50.png
+img/PomoFocus_icon_72x72.png
+img/PomoFocus_icon_76x76.png
+img/PomoFocus_icon_80x80.png
+img/PomoFocus_icon_87x87.png
+img/PomoFocus_icon_100x100.png
+img/PomoFocus_icon_114x114.png
+img/PomoFocus_icon_120x120.png
+img/PomoFocus_icon_144x144.png
+img/PomoFocus_icon_152x152.png
+img/PomoFocus_icon_167x167.png
+img/PomoFocus_icon_180x180.png
+img/PomoFocus_icon_1024x1024.png
 
 # FONTS
-/fonts/LibreFranklin/LibreFranklin-Bold.ttf
-/fonts/LibreFranklin/LibreFranklin-Bold.woff2
-/fonts/LibreFranklin/LibreFranklin-Medium.ttf
-/fonts/LibreFranklin/LibreFrankling-Medium.woff2
+fonts/LibreFranklin/LibreFranklin-Bold.ttf
+fonts/LibreFranklin/LibreFranklin-Bold.woff2
+fonts/LibreFranklin/LibreFranklin-Medium.ttf
+fonts/LibreFranklin/LibreFrankling-Medium.woff2
 
 # HTML
 index.HTML
