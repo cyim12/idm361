@@ -28,7 +28,7 @@
 
 #addToHomeScreen.addToHomeIOS7 {
 	background:#f2f2f2 !important;
-	-webkit-border-radius:1px !important;
+	-webkit-border-radius:10px !important;
 	border:1px solid #ccc;
 	-webkit-box-shadow:0 0 4px rgba(0,0,0,0.2);
 }
