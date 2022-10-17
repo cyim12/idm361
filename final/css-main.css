@@ -1,0 +1,117 @@
+/* FONTS */
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('/final/fonts/LibreFranklin/LibreFranklin-Bold.ttf');
+    src: url('/final/fonts/LibreFranklin/LibreFranklin-Bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+    }
+  
+  @font-face {
+    font-family: 'Libre Franklin';
+    src: url('/final/fonts/LibreFranklin/LibreFranklin-Medium.ttf');
+    src: url('/final/fonts/LibreFranklin/LibreFranklin-Medium.woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+	background-color:#DECFC1;
+    font-family: 'Libre Franklin', Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #6D7A71;
+}
+
+.container {
+	margin: 120px auto;
+	padding: 40px 10px;
+	width: 320px;
+	min-width: 25%;
+	max-width: 90%;
+	height: 500px;
+	background-color: #F5F0E9;
+	border-radius: 20px;
+}
+
+.button, .timerButtons {
+	text-align: center;
+	margin-top: 80px;
+}
+
+.button, #timerArea {
+	color: #BC7F6A;
+	width: 100%;
+	margin: 10px auto;
+	border: none;
+	display: block;
+}
+
+.mid {
+}
+
+
+#resetButton {
+	background-color: #BC7F6A;
+}
+
+#startButton {
+	background-color: #6D7A71;
+}
+
+.timerButton {
+}
+
+#timerArea {
+    font-family: 'Libre Franklin', Helvetica, sans-serif;
+	font-size: 100px;
+	text-align: center;
+}
+
+.hidden {
+	visibility: none;
+}
+
+.timerButtons {
+	flex-wrap: wrap;
+	gap: 10px;
+	font-weight: bold;
+	width: 100%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	margin: 50px 0;
+}
+
+.timerButton {
+	padding: 10px 20px;
+	background: #DECFC1;
+	color: #BC7F6A;
+	width: 120px;
+	border-radius: 8px;
+	margin-bottom: 0;
+}
+
+#breakButtons {
+	display: flex;
+	gap: 5px;
+	width: 92%;
+	font-size: 14px;
+}
+
+#addTwentyFive {
+	width: 130px;
+}
+
+.actionButtons {
+	margin: 40px 0;
+}
+
+.button {
+	font-size: 16px;
+	padding: 10px 12px 0px;
+	width: 100px;
+	height: 35px;
+	color: #F5F0E9;
+	border-radius: 8px;
+}
