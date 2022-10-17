@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 001
+# version 002
 
 CACHE:
 
@@ -12,12 +12,12 @@ css-main.css
 img/pomodoroTimer.svg
 img/toDoList.svg
 img/PomoFocus_icon_20x20.png
-img/PomoFocus_icon_40x40.png
 img/PomoFocus_icon_29x29.png
+img/PomoFocus_icon_40x40.png
+img/PomoFocus_icon_50x50.png
 img/PomoFocus_icon_57x57.png
 img/PomoFocus_icon_58x58.png
 img/PomoFocus_icon_60x60.png
-img/PomoFocus_icon_50x50.png
 img/PomoFocus_icon_72x72.png
 img/PomoFocus_icon_76x76.png
 img/PomoFocus_icon_80x80.png
@@ -29,6 +29,7 @@ img/PomoFocus_icon_144x144.png
 img/PomoFocus_icon_152x152.png
 img/PomoFocus_icon_167x167.png
 img/PomoFocus_icon_180x180.png
+img/PomoFocus_icon_256x256.png
 img/PomoFocus_icon_1024x1024.png
 
 # FONTS
