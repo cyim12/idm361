@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 001
+# version 002
 
 CACHE:
 
@@ -8,8 +8,10 @@ css-add2home.css
 css-noramalize.css
 css-main.css
 
-# IMAGES
+# GIFS
+gifs/turnPhone.gif
 
+# IMAGES
 imgs/PomoFocus_icon_20x20.png
 imgs/PomoFocus_icon_40x40.png
 imgs/PomoFocus_icon_29x29.png

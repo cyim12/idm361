@@ -23,95 +23,122 @@ body {
     color: #6D7A71;
 }
 
-.container {
-	margin: 120px auto;
-	padding: 40px 10px;
-	width: 320px;
-	min-width: 25%;
-	max-width: 90%;
-	height: 500px;
-	background-color: #F5F0E9;
-	border-radius: 20px;
+@media only screen and (orientation:portrait) {
+
+	.container {
+		margin: 40px auto;
+		padding: 40px 10px;
+		width: 320px;
+		min-width: 25%;
+		max-width: 90%;
+		height: 500px;
+		background-color: #F5F0E9;
+		border-radius: 20px;
+		text-align: center;
+	}
+
+	.button, .timerButtons {
+		text-align: center;
+		margin-top: 80px;
+	}
+
+	.button, #timerArea {
+		color: #BC7F6A;
+		width: 100%;
+		margin: 10px auto;
+		border: none;
+		display: block;
+	}
+
+	#resetButton {
+		background-color: #BC7F6A;
+	}
+
+	#startButton {
+		background-color: #6D7A71;
+	}
+
+	.timerButton {
+	}
+
+	#timerArea {
+	    font-family: 'Libre Franklin', Helvetica, sans-serif;
+		font-size: 100px;
+		text-align: center;
+	}
+
+	.hidden {
+		visibility: none;
+	}
+
+	.timerButtons {
+		flex-wrap: wrap;
+		gap: 10px;
+		font-weight: bold;
+		width: 100%;
+		display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+		margin: 50px 0;
+	}
+
+	.timerButton {
+		padding: 10px 20px;
+		background: #DECFC1;
+		color: #BC7F6A;
+		width: 120px;
+		border-radius: 8px;
+		margin-bottom: 0;
+	}
+
+	#breakButtons {
+		display: flex;
+		gap: 5px;
+		width: 92%;
+		font-size: 14px;
+	}
+
+	#addTwentyFive {
+		width: 130px;
+	}
+
+	.actionButtons {
+		margin: 40px 0;
+	}
+
+	.button {
+		font-size: 16px;
+		padding: 10px 12px 0px;
+		width: 100px;
+		height: 35px;
+		color: #F5F0E9;
+		border-radius: 8px;
+	}
 }
 
-.button, .timerButtons {
-	text-align: center;
-	margin-top: 80px;
-}
+@media only screen and (orientation:landscape) {
+	body {
+		background-color: #6D7A71;
+		text-align: center;
+		margin-top: 10px;
+	}
 
-.button, #timerArea {
-	color: #BC7F6A;
-	width: 100%;
-	margin: 10px auto;
-	border: none;
-	display: block;
-}
+	#output:after {
+		text-align: center;
+		content: 'Please turn your device back to portrait mode to use PomoFocus :)';
+		color: #F5F0E9;
+	}
 
-.mid {
-}
-
-
-#resetButton {
-	background-color: #BC7F6A;
-}
-
-#startButton {
-	background-color: #6D7A71;
-}
-
-.timerButton {
-}
-
-#timerArea {
-    font-family: 'Libre Franklin', Helvetica, sans-serif;
-	font-size: 100px;
-	text-align: center;
-}
-
-.hidden {
-	visibility: none;
-}
-
-.timerButtons {
-	flex-wrap: wrap;
-	gap: 10px;
-	font-weight: bold;
-	width: 100%;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-	margin: 50px 0;
-}
-
-.timerButton {
-	padding: 10px 20px;
-	background: #DECFC1;
-	color: #BC7F6A;
-	width: 120px;
-	border-radius: 8px;
-	margin-bottom: 0;
-}
-
-#breakButtons {
-	display: flex;
-	gap: 5px;
-	width: 92%;
-	font-size: 14px;
-}
-
-#addTwentyFive {
-	width: 130px;
-}
-
-.actionButtons {
-	margin: 40px 0;
-}
-
-.button {
-	font-size: 16px;
-	padding: 10px 12px 0px;
-	width: 100px;
-	height: 35px;
-	color: #F5F0E9;
-	border-radius: 8px;
+	#gif {
+		width: 100px;
+		height: 100px;
+		margin: 25px auto 0px;
+		background: url(gifs/turnPhone.gif);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.timerButtons, #timerArea, .actionButtons {
+		visibility:hidden;
+	}
 }
