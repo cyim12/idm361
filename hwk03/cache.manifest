@@ -1,11 +1,11 @@
 CACHE MANIFEST
-# version 003
+# version 008
 
 CACHE:
 
 # CSS
 css-add2home.css
-css-noramalize.css
+css-normalize.css
 css-main.css
 
 # IMAGES
@@ -33,13 +33,13 @@ img/PomoFocus_icon_256x256.png
 img/PomoFocus_icon_1024x1024.png
 
 # FONTS
-fonts/LibreFranklin/LibreFranklin-Bold.ttf
-fonts/LibreFranklin/LibreFranklin-Bold.woff2
-fonts/LibreFranklin/LibreFranklin-Medium.ttf
-fonts/LibreFranklin/LibreFrankling-Medium.woff2
+fonts/LibreFranklin-Bold.ttf
+fonts/LibreFranklin-Bold.woff2
+fonts/LibreFranklin-Medium.ttf
+fonts/LibreFranklin-Medium.woff2
 
 # HTML
-index.HTML
+index.html
 
 # JAVASCRIPT
 js-refresh-manifest.js

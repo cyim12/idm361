@@ -1,17 +1,19 @@
 CACHE MANIFEST
-# version 008
+# version 009
 
 CACHE:
 
 # CSS
 css-add2home.css
-css-noramalize.css
+css-normalize.css
 css-main.css
 
 # GIFS
 gifs/turnPhone.gif
 
 # IMAGES
+imgs/actionBtns.png
+imgs/pomodoroBtns.png
 imgs/PomoFocus_icon_20x20.png
 imgs/PomoFocus_icon_29x29.png
 imgs/PomoFocus_icon_40x40.png
@@ -34,10 +36,10 @@ imgs/PomoFocus_icon_256x256.png
 imgs/PomoFocus_icon_1024x1024.png
 
 # FONTS
-fonts/LibreFranklin/LibreFranklin-Bold.ttf
-fonts/LibreFranklin/LibreFranklin-Bold.woff2
-fonts/LibreFranklin/LibreFranklin-Medium.ttf
-fonts/LibreFranklin/LibreFranklin-Medium.woff2
+fonts/LibreFranklin-Bold.ttf
+fonts/LibreFranklin-Bold.woff2
+fonts/LibreFranklin-Medium.ttf
+fonts/LibreFranklin-Medium.woff2
 
 # HTML
 index.html
