@@ -23,6 +23,7 @@ const countdownTimer = document.getElementById('countdown')
 let minutes = 25
 let seconds = 60
 let pause = true
+let reset = false
 let pomodoro = "pomodoro"
 
 // event listener for pomodoro buttons
@@ -31,6 +32,9 @@ document.addEventListener('click', e => {
 
     // reset when pomodoro button selected
     pause = true
+    reset = true
+    document.getElementById('resetButton').style.backgroundColor = "#BC7F6A"
+    document.getElementById('resetButton').style.color = "#F5F0E9"
     seconds = 60
     startBtn.innerHTML = "START"
 
@@ -56,6 +60,33 @@ document.addEventListener('click', e => {
     }
 })
 
+// event listener for reset button
+// resetBtn.addEventListener('click', function onClick(event) {
+//     event.target.style.backgroundColor = "#F5F0E9"
+//     document.getElementById('resetButton').style.color = "#BC7F6A"
+// });
+
+
+// event listener for reset button
+resetBtn.addEventListener('click', () => {
+    // if countdown is paused, start/resume countdown, otherwise, pause countdown
+    if (reset) {
+        document.getElementById('resetButton').style.backgroundColor = "#BC7F6A"
+        document.getElementById('resetButton').style.color = "#F5F0E9"
+        countdownTimer.innerHTML = "00:00"
+        reset = true
+        pomodoroBtns.forEach(button => {
+        button.classList.remove('selected')
+        })
+        countdown() 
+    } else if (!reset) {
+        reset = false
+        document.getElementById('resetButton').style.backgroundColor = "#F5F0E9"
+        document.getElementById('resetButton').style.color = "#BC7F6A"
+    }
+})
+
+
 // event listener for start button
 startBtn.addEventListener('click', () => {
     // if countdown is paused, start/resume countdown, otherwise, pause countdown
@@ -64,12 +95,18 @@ startBtn.addEventListener('click', () => {
         document.getElementById('startButton').style.backgroundColor = "#F5F0E9"
         document.getElementById('startButton').style.color = "#6D7A71"
         pause = false
+        reset = false
+        document.getElementById('resetButton').style.backgroundColor = "#F5F0E9"
+        document.getElementById('resetButton').style.color = "#BC7F6A"
         countdown() 
     } else if (!pause) {
         startBtn.innerHTML = "START"
         pause = true
         document.getElementById('startButton').style.backgroundColor = "#6D7A71"
         document.getElementById('startButton').style.color = "#F5F0E9"
+        document.getElementById('resetButton').style.backgroundColor = "#BC7F6A"
+        document.getElementById('resetButton').style.color = "#F5F0E9"
+        reset = true
     }
 })
 
@@ -86,7 +123,8 @@ function countdown() {
     // count down every second, when a minute is up, countdown one minute
     // when time reaches 0:00, reset
     if(seconds > 0) {
-        setTimeout(countdown, 1000);
+        setTimeout(countdown, 1000)
+        reset = false;
     } else if(currentMins > 0){
         seconds = 60
         minutes--

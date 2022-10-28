@@ -75,11 +75,16 @@ p {
 	}
 
 	#resetButton {
-		background-color: #BC7F6A;
+		background-color: #F5F0E9;
+		color: #BC7F6A;
+		border-bottom: 2px solid #BC7F6A;
+		border-right: 2px solid #BC7F6A;
 	}
 
 	#startButton {
 		background-color: #6D7A71;
+		border-bottom: 2px solid #6D7A71;
+		border-right: 2px solid #6D7A71;
 	}
 
 	.timerButton {
