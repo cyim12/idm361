@@ -51,10 +51,10 @@ document.addEventListener('click', e => {
         pomodoro = "pomodoro"
         minutes = 25
     } else if(e.target.matches('#addFive')) {
-        countdownTimer.innerHTML = '00:10'
+        countdownTimer.innerHTML = '00:05'
         pomodoro = "short break"
         minutes = 1
-        seconds = 10
+        seconds = 5
     } else if(e.target.matches('#addTwenty')) {
         countdownTimer.innerHTML = '20:00'
         pomodoro = "long break"
@@ -125,7 +125,7 @@ function countdown() {
     } else if(currentMins === 0) {
         audio.play()
         document.getElementById('timerEndOverlay').style.display = "block"
-        reset = false        
+        reset = true        
     }
 }
 
@@ -133,7 +133,16 @@ function countdown() {
 var overlay = document.getElementById('timerEndOverlay');
 var stopBtn = document.getElementById('stopButton');
 
+
 stopBtn.onclick = function () {
     overlay.style.display = "none"
     audio.pause ();
+    pause = true;
+    reset = false;
+    pomodoroBtns.forEach(button => {
+        button.classList.remove('selected')
+    })
+    startBtn.innerHTML = "START"
+    document.getElementById('startButton').style.backgroundColor = "#6D7A71"
+    document.getElementById('startButton').style.color = "#F5F0E9"
 }
