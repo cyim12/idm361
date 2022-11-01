@@ -1,0 +1,258 @@
+/* FONTS */
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('fonts/LibreFranklin-Bold.ttf');
+    src: url('fonts/LibreFranklin-Bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+    }
+  
+  @font-face {
+    font-family: 'Libre Franklin';
+    src: url('fonts/LibreFranklin-Medium.ttf');
+    src: url('fonts/LibreFranklin-Medium.woff2');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body {
+	background-color:#DECFC1;
+    font-family: 'Libre Franklin', Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #6D7A71;
+}
+
+h2 {
+	color: #BC7F6A;
+	text-align: center;
+	margin-top: 5px;
+}
+
+p {
+	font-weight: normal;
+	font-size: 14px;
+}
+
+@media only screen and (orientation:portrait) {
+
+	.container {
+		margin: 40px auto;
+		padding: 40px 10px;
+		width: 320px;
+		min-width: 25%;
+		max-width: 90%;
+		height: 500px;
+		background-color: #F5F0E9;
+		border-radius: 20px;
+		text-align: center;
+	}
+
+	#infoBtn {
+		font-size: 16px;
+		font-family: 'Libre Franklin', Helvetica, sans-serif;
+    	font-weight: bold;
+		background-color: #6D7A71;
+		color: #DECFC1;
+		border-radius: 20px;
+		padding: 2px 9px;
+		border: none;
+		position: relative;
+		left: 8rem;
+	}
+
+	.actionButton, .timerButtons {
+		text-align: center;
+	}
+
+	.actionButton, #countdown {
+		color: #BC7F6A;
+		width: 100%;
+		margin: 20px auto 10px;
+		border: none;
+		display: block;
+		border-color: none;
+	}
+
+	#resetButton {
+		background-color: #F5F0E9;
+		color: #BC7F6A;
+		border-bottom: 2px solid #BC7F6A;
+		border-right: 2px solid #BC7F6A;
+	}
+
+	#startButton {
+		background-color: #6D7A71;
+		border-bottom: 2px solid #6D7A71;
+		border-right: 2px solid #6D7A71;
+	}
+
+	.timerButton {
+		border: none;
+		padding: 10px 20px;
+		background: #DECFC1;
+		color: #BC7F6A;
+		width: 140px;
+		border-radius: 8px;
+		margin-bottom: 0;
+		font-family: 'Libre Franklin', Helvetica, sans-serif;
+		font-weight: bold;
+		box-shadow: inset 2px 2px 4px #ffffff;
+		box-shadow: 1px 1px 4px rgb(165, 165, 165);
+	}
+
+	#countdown {
+	    font-family: 'Libre Franklin', Helvetica, sans-serif;
+		font-size: 100px;
+		text-align: center;
+	}
+
+	.hidden {
+		visibility: none;
+	}
+
+	.timerButtons {
+		flex-wrap: wrap;
+		gap: 10px;
+		font-weight: bold;
+		width: 100%;
+		display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+		margin: 35px 0;
+		border: none;
+	}
+
+	#breakButtons {
+		display: flex;
+		gap: 5px;
+		width: 92%;
+		font-size: 14px;
+	}
+
+	#addTwentyFive {
+		width: 140px;
+	}
+
+	.actionButtons {
+		margin: 40px 0;
+	}
+
+	.actionButton {
+		font-size: 16px;
+		padding: 15px 12px 6px;
+		width: 100px;
+		height: 25px;
+		color: #F5F0E9;
+		border-radius: 8px;
+		box-shadow: inset 2px 2px 1px #ffffff;
+	}
+
+	.selected {
+		background-color: #BC7F6A;
+		color: #F5F0E9;
+	}
+
+	/* ///////MODAL CONTENT/////// */
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.5);
+		text-align: center;
+	}
+
+	.modal-content {
+		background-color: #F5F0E9;
+		margin: 5% auto;
+		padding: 10px 20px 20px;
+		border: 4px solid #BC7F6A;
+		border-radius: 20px;
+		width: 80%;
+  	}
+
+	p.modalText {
+		text-align: left;
+		padding: 10px 0;
+	}
+
+	img.infoModalImg {
+		padding: 10px 0;
+	}
+  
+  	.close {
+		color: #F5F0E9;
+		background-color: #6D7A71;
+		border-radius: 20px;
+		padding: 2px 8px 4px;
+		font-size: 16px;
+		font-weight: bold;
+		position: relative;
+		left: 9.6rem;
+		cursor: pointer;
+		margin-top: -10px;
+	}
+	/* ///////MODAL END/////// */
+
+}
+
+	/* ///////OVERLAY CONTENT/////// */
+
+	.overlay {
+		display: none;
+		position: fixed;
+		z-index: 2;
+		text-align: center;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.85);
+	}
+
+	.overlay-content {
+		margin: 60% auto;
+		padding: 10px 20px 20px;
+		width: 80%;
+	}
+
+	#stopButton {
+		background-color: #F5F0E9;
+		color: #BC7F6A;
+	}
+
+	/* ///////OVERLAY END/////// */
+
+@media only screen and (orientation:landscape) {
+	body {
+		background-color: #6D7A71;
+		text-align: center;
+		margin-top: 0px;
+	}
+
+	#output:after {
+		text-align: center;
+		content: 'Please turn your device back to portrait mode to use PomoFocus :)';
+		color: #F5F0E9;
+	}
+
+	#gif {
+		width: 220px;
+		height: 220px;
+		margin: -30px auto;
+		background: url(gifs/turnPhone.gif);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.timerButtons, #countdown, .actionButtons, .modal, #infoBtn{
+		visibility: hidden;
+	}
+}

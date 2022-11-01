@@ -1,0 +1,53 @@
+CACHE MANIFEST
+# version 011
+
+CACHE:
+
+# CSS
+css-add2home.css
+css-normalize.css
+css-main.css
+
+# GIFS
+gifs/turnPhone.gif
+
+# IMAGES
+imgs/actionBtns.png
+imgs/pomodoroBtns.png
+imgs/PomoFocus_icon_20x20.png
+imgs/PomoFocus_icon_29x29.png
+imgs/PomoFocus_icon_40x40.png
+imgs/PomoFocus_icon_50x50.png
+imgs/PomoFocus_icon_57x57.png
+imgs/PomoFocus_icon_58x58.png
+imgs/PomoFocus_icon_60x60.png
+imgs/PomoFocus_icon_72x72.png
+imgs/PomoFocus_icon_76x76.png
+imgs/PomoFocus_icon_80x80.png
+imgs/PomoFocus_icon_87x87.png
+imgs/PomoFocus_icon_100x100.png
+imgs/PomoFocus_icon_114x114.png
+imgs/PomoFocus_icon_120x120.png
+imgs/PomoFocus_icon_144x144.png
+imgs/PomoFocus_icon_152x152.png
+imgs/PomoFocus_icon_167x167.png
+imgs/PomoFocus_icon_180x180.png
+imgs/PomoFocus_icon_256x256.png
+imgs/PomoFocus_icon_1024x1024.png
+
+# FONTS
+fonts/LibreFranklin-Bold.ttf
+fonts/LibreFranklin-Bold.woff2
+fonts/LibreFranklin-Medium.ttf
+fonts/LibreFranklin-Medium.woff2
+
+# HTML
+index.html
+
+# JAVASCRIPT
+js-refresh-manifest.js
+js-add2home.js
+js-main.js
+
+## for any resources not listed above will require the user to be online
+NETWORK: 
