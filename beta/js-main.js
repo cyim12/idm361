@@ -23,8 +23,9 @@ const audio = document.getElementById('audio')
 
 let minutes = 25
 let seconds = 60
-let pause = true
+let pause = false
 let reset = false
+let initPage = true
 let pomodoro = "pomodoro"
 
 // EVENT LISTENER FOR POMODORO BUTTONS
@@ -50,15 +51,18 @@ document.addEventListener('click', e => {
         countdownTimer.innerHTML = '25:00'
         pomodoro = "pomodoro"
         minutes = 25
+        initPage = false
     } else if(e.target.matches('#addFive')) {
         countdownTimer.innerHTML = '00:05'
         pomodoro = "short break"
         minutes = 1
         seconds = 5
+        initPage = false
     } else if(e.target.matches('#addTwenty')) {
         countdownTimer.innerHTML = '20:00'
         pomodoro = "long break"
         minutes = 20
+        initPage = false
     }
 })
 
@@ -70,6 +74,7 @@ resetBtn.addEventListener('click', () => {
         document.getElementById('resetButton').style.color = "#F5F0E9"
         countdownTimer.innerHTML = "00:00"
         reset = true
+        initPage = true
         pomodoroBtns.forEach(button => {
         button.classList.remove('selected')
         })
@@ -84,6 +89,7 @@ resetBtn.addEventListener('click', () => {
 
 // EVENT LISTENER FOR START BUTTON
 startBtn.addEventListener('click', () => {
+    if (initPage) return;
     // if countdown is paused, start/resume countdown, otherwise, pause countdown
     if (pause) {
         startBtn.innerHTML = "PAUSE"
@@ -94,7 +100,7 @@ startBtn.addEventListener('click', () => {
         document.getElementById('resetButton').style.backgroundColor = "#F5F0E9"
         document.getElementById('resetButton').style.color = "#BC7F6A"
         countdown() 
-    } else if (!pause) {
+    } else  {
         startBtn.innerHTML = "START"
         pause = true
         document.getElementById('startButton').style.backgroundColor = "#6D7A71"
@@ -125,7 +131,9 @@ function countdown() {
     } else if(currentMins === 0) {
         audio.play()
         document.getElementById('timerEndOverlay').style.display = "block"
-        reset = true        
+        reset = true
+        initPage = true 
+        console.log(1)       
     }
 }
 
