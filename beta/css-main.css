@@ -223,9 +223,20 @@ p {
 		width: 80%;
 	}
 
+	#gif2 {
+		background: url(gifs/timerComplete.gif);
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
 	#stopButton {
 		background-color: #F5F0E9;
 		color: #BC7F6A;
+		padding: 10px 12px 6px;
 	}
 
 	/* ///////OVERLAY END/////// */
@@ -243,7 +254,7 @@ p {
 		color: #F5F0E9;
 	}
 
-	#gif {
+	#gif1 {
 		width: 220px;
 		height: 220px;
 		margin: -30px auto;
