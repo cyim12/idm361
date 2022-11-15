@@ -111,6 +111,7 @@ startBtn.addEventListener('click', () => {
     }
 })
 
+
 // COUNTDOWN FUNCTION
 function countdown() {
     // return if countdown is paused
@@ -132,7 +133,7 @@ function countdown() {
         audio.play()
         document.getElementById('timerEndOverlay').style.display = "block"
         reset = true
-        initPage = true 
+        initPage = true
         console.log(1)       
     }
 }
