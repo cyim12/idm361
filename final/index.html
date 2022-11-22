@@ -43,6 +43,10 @@
 
 		<button id="infoBtn">i</button>
 
+		<audio id="audioArea">
+			<source src="audio/audio1.mp3" preload="auto" type="audio/mp3">
+		  </audio>
+
         <div class="timerButtons">
 				<input type="button" value="POMODORO" id="addTwentyFive" class="timerButton"/>
             <div id="breakButtons">
@@ -59,7 +63,7 @@
         </div>
 
 		<div id="output"></div>
-        <div id="gif"></div>
+        <div id="gif1"></div>
 
 	</div>
 
@@ -76,6 +80,16 @@
 			<p class="modalText">Use the ‘Start’ button to begin the timers and click ‘Pause’ to stop the timer at any time. You may also click ‘Reset’ to set which timer you'd like from the beginning. Enjoy using PomoFocus!</p>
 		  </div>
 	  
+		</div>
+
+		<!-- COUNTDOWN END OVERLAY -->
+		<div id="timerEndOverlay" class="overlay">
+
+			<div class="overlay-content">
+				<h2>PomoFocus Timer</h2>
+				<div id="gif2"></div>
+				<div id="stopButton" class="actionButton">STOP</div>
+			</div>
 		</div>
 
 	

@@ -75,11 +75,16 @@ p {
 	}
 
 	#resetButton {
-		background-color: #BC7F6A;
+		background-color: #F5F0E9;
+		color: #BC7F6A;
+		border-bottom: 2px solid #BC7F6A;
+		border-right: 2px solid #BC7F6A;
 	}
 
 	#startButton {
 		background-color: #6D7A71;
+		border-bottom: 2px solid #6D7A71;
+		border-right: 2px solid #6D7A71;
 	}
 
 	.timerButton {
@@ -148,7 +153,7 @@ p {
 		color: #F5F0E9;
 	}
 
-	/* ///////The Modal/////// */
+	/* ///////MODAL CONTENT/////// */
 	.modal {
 		display: none;
 		position: fixed;
@@ -197,6 +202,45 @@ p {
 
 }
 
+	/* ///////OVERLAY CONTENT/////// */
+
+	.overlay {
+		display: none;
+		position: fixed;
+		z-index: 2;
+		text-align: center;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.85);
+	}
+
+	.overlay-content {
+		margin: 60% auto;
+		padding: 10px 20px 20px;
+		width: 80%;
+	}
+
+	#gif2 {
+		background: url(gifs/timerComplete.gif);
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#stopButton {
+		background-color: #F5F0E9;
+		color: #BC7F6A;
+		padding: 10px 12px 6px;
+	}
+
+	/* ///////OVERLAY END/////// */
+
 @media only screen and (orientation:landscape) {
 	body {
 		background-color: #6D7A71;
@@ -210,7 +254,7 @@ p {
 		color: #F5F0E9;
 	}
 
-	#gif {
+	#gif1 {
 		width: 220px;
 		height: 220px;
 		margin: -30px auto;

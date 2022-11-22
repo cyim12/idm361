@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# version 011
+# version 003
 
 CACHE:
 
@@ -9,7 +9,11 @@ css-normalize.css
 css-main.css
 
 # GIFS
+gifs/timerComplete.gif
 gifs/turnPhone.gif
+
+# AUDIO
+audio/audio1.mp3
 
 # IMAGES
 imgs/actionBtns.png
