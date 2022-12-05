@@ -19,7 +19,7 @@ var longBreakBtn = document.getElementById('addTwenty');
 var resetBtn = document.getElementById('resetButton');
 var startBtn = document.getElementById('startButton');
 const countdownTimer = document.getElementById('countdown');
-const audioObj = document.getElementById('audioArea');
+// const audioObj = document.getElementById('audioArea');
 
 
 let minutes = 25;
@@ -90,7 +90,6 @@ resetBtn.addEventListener('click', () => {
 
 // EVENT LISTENER FOR START BUTTON
 startBtn.addEventListener('click', () => {
-    audioObj.load ();
     if (initPage) return;
     // if countdown is paused, start/resume countdown, otherwise, pause countdown
     if (pause) {
@@ -122,8 +121,6 @@ function countdown() {
     // set minutes and seconds
     let currentMins = minutes - 1
     seconds--
-    console.log (currentMins);
-
     countdownTimer.innerHTML = (currentMins < 10 ? "0" : "") + currentMins.toString() + ':' + (seconds < 10 ? "0" : "") + String(seconds)
 
     if(seconds > 0) {
@@ -133,9 +130,9 @@ function countdown() {
         seconds = 60;
         minutes--;
         countdown();           
-    } else if(currentMins <= 0) {
-        audioObj.play ();
-        console.log("sound should play");
+    } else if(currentMins === 0) {
+        // alert("sound should play");
+        audioObj.play();
         document.getElementById('timerEndOverlay').style.display = "block";
         reset = true;
         initPage = true;
@@ -144,11 +141,11 @@ function countdown() {
 }
 
 // TEST BUTTON
-// var testButton = document.getElementById('testBtn');
+var testButton = document.getElementById('testBtn');
 
-// testButton.onclick = function () {
-//     audioObj.play();
-// }
+testButton.onclick = function () {
+    audioObj.play();
+}
 
 
 // TIMER END OVERLAY

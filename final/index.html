@@ -39,14 +39,16 @@
 
 </head>
 <body>
+
+	<audio id="audioArea">
+		<source src="audio/audio1.mp3" preload="auto" type="audio/mpeg">
+	  </audio>
+
+	  <!-- <button id="testBtn">IE TEST</button> -->
+
     <div class=container>
 
 		<button id="infoBtn">i</button>
-
-		<audio id="audioArea">
-			<source src="audio/audio1.mp3" preload="auto" type="audio/mp3">
-		  </audio>
-
         <div class="timerButtons">
 				<input type="button" value="POMODORO" id="addTwentyFive" class="timerButton"/>
             <div id="breakButtons">
@@ -60,6 +62,7 @@
         <div class="actionButtons">
             <div id="resetButton" class="actionButton">RESET</div>
             <div id="startButton" class="actionButton">START</div>
+			<!-- <button type="button" id="startButton" class="actionButton">START</button> -->
         </div>
 
 		<div id="output"></div>
@@ -106,6 +109,7 @@
   	</script>
   	<script src="js-add2home.js"></script>
 	<script src="js-main.js"></script>
+	<!-- <script src="test.js"></script> -->
 
 </body>
 </html>
