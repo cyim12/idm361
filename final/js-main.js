@@ -3,13 +3,14 @@ var modal = document.getElementById("infoModal");
 var btn = document.getElementById("infoBtn");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
+btn.onclick = function () {
+    modal.style.display = "block";
 }
 
-span.onclick = function() {
-  modal.style.display = "none";
+span.onclick = function () {
+    modal.style.display = "none";
 }
+
 
 // POMODORO
 var pomodoroBtns = document.querySelectorAll('.timerButton');
@@ -22,8 +23,7 @@ const countdownTimer = document.getElementById('countdown');
 const audioObj = document.getElementById('audioArea');
 
 
-let minutes = 25;
-let seconds = 60;
+let totalSeconds = 0;
 let pause = false;
 let reset = false;
 let initPage = true;
@@ -31,7 +31,7 @@ let pomodoro = "pomodoro";
 
 // EVENT LISTENER FOR POMODORO BUTTONS
 document.addEventListener('click', e => {
-    if(!e.target.matches('.timerButton')) return
+    if (!e.target.matches('.timerButton')) return
 
     // reset when pomodoro button selected
     pause = true;
@@ -48,21 +48,20 @@ document.addEventListener('click', e => {
     e.target.classList.add('selected');
 
     // set timer
-    if(e.target.matches('#addTwentyFive')) {
+    if (e.target.matches('#addTwentyFive')) {
         countdownTimer.innerHTML = '25:00';
         pomodoro = "pomodoro";
-        minutes = 25;
+        totalSeconds = 1500;
         initPage = false;
-    } else if(e.target.matches('#addFive')) {
+    } else if (e.target.matches('#addFive')) {
         countdownTimer.innerHTML = '00:05';
         pomodoro = "short break";
-        minutes = 1;
-        seconds = 5;
+        totalSeconds = 5;
         initPage = false;
-    } else if(e.target.matches('#addTwenty')) {
+    } else if (e.target.matches('#addTwenty')) {
         countdownTimer.innerHTML = '20:00';
         pomodoro = "long break";
-        minutes = 20;
+        totalSeconds = 1200;
         initPage = false;
     }
 })
@@ -77,7 +76,7 @@ resetBtn.addEventListener('click', () => {
         reset = true;
         initPage = true;
         pomodoroBtns.forEach(button => {
-        button.classList.remove('selected')
+            button.classList.remove('selected')
         });
         countdown();
     } else if (!reset) {
@@ -90,7 +89,7 @@ resetBtn.addEventListener('click', () => {
 
 // EVENT LISTENER FOR START BUTTON
 startBtn.addEventListener('click', () => {
-    audioObj.load ();
+    audioObj.load();
     if (initPage) return;
     // if countdown is paused, start/resume countdown, otherwise, pause countdown
     if (pause) {
@@ -102,7 +101,7 @@ startBtn.addEventListener('click', () => {
         document.getElementById('resetButton').style.backgroundColor = "#F5F0E9";
         document.getElementById('resetButton').style.color = "#BC7F6A";
         countdown();
-    } else  {
+    } else {
         startBtn.innerHTML = "START";
         pause = true;
         document.getElementById('startButton').style.backgroundColor = "#6D7A71";
@@ -117,24 +116,34 @@ startBtn.addEventListener('click', () => {
 // COUNTDOWN FUNCTION
 function countdown() {
     // return if countdown is paused
-    if(pause) return
+    if (pause) return
+    totalSeconds--;
 
-    // set minutes and seconds
-    let currentMins = minutes - 1
-    seconds--
-    console.log (currentMins);
+    let mins = Math.floor(totalSeconds / 60);
+    let seconds = totalSeconds % 60;
+    let htmlMinutes = '';
+    let htmlSeconds = '';
 
-    countdownTimer.innerHTML = (currentMins < 10 ? "0" : "") + currentMins.toString() + ':' + (seconds < 10 ? "0" : "") + String(seconds)
+    if (mins > 9) {
+        htmlMinutes = mins.toString();
+    } else {
+        htmlMinutes = "0" + mins.toString();
+    }
 
-    if(seconds > 0) {
+    if (seconds > 9) {
+        htmlSeconds = seconds.toString();
+    } else {
+        htmlSeconds = "0" + seconds.toString();
+    }
+
+    countdownTimer.innerHTML = `${htmlMinutes}:${htmlSeconds}`
+
+
+    if (totalSeconds > 0) {
         setTimeout(countdown, 1000);
         reset = false;
-    } else if(currentMins > 0){
-        seconds = 60;
-        minutes--;
-        countdown();           
-    } else if(currentMins <= 0) {
-        audioObj.play ();
+    } else if (totalSeconds === 0) {
+        audioObj.play();
         console.log("sound should play");
         document.getElementById('timerEndOverlay').style.display = "block";
         reset = true;
@@ -143,22 +152,13 @@ function countdown() {
     }
 }
 
-// TEST BUTTON
-// var testButton = document.getElementById('testBtn');
-
-// testButton.onclick = function () {
-//     audioObj.play();
-// }
-
-
 // TIMER END OVERLAY
 var overlay = document.getElementById('timerEndOverlay');
 var stopBtn = document.getElementById('stopButton');
 
-
 stopBtn.onclick = function () {
     overlay.style.display = "none";
-    audioObj.pause ();
+    audioObj.pause();
     audioObj.currentTime = 0;
     pause = true;
     reset = false;
