@@ -95,11 +95,53 @@ img.heroImg {
     min-width: 400px;
 }
 
+#designImgs {
+    width: 100%;
+    display: inline-block;
+}
+
+#stylesheet {
+    width: 40%;
+    padding: 10px;
+}
+
+#touchIcon {
+    width: 30%;
+    padding: 10px;
+}
+
+#finalImg {
+    width: 80%;
+    padding: 20px;
+}
+
 .container {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-bottom: 6rem;
+}
+
+#finalLink {
+    margin-top: 3rem;
+}
+
+.finalBtn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid #BC7F6A;
+    font-size: 20px;
+    font-family: 'Libre Franklin';
+    font-weight: bold;
+    background-color: #F5F0E9;
+    color: #BC7F6A;
+    text-decoration: none;
+}
+
+.finalBtn:hover {
+    background-color: #BC7F6A;
+    color: #F5F0E9;
+    text-decoration: none;
 }
 
 p {
@@ -152,3 +194,4 @@ li.thought {
     width: 22%;
     padding: 0px 10px;
 }
+
