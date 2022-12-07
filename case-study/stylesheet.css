@@ -1,0 +1,154 @@
+/* FONTS */
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('fonts/LibreFranklin-Bold.ttf');
+    src: url('fonts/LibreFranklin-Bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('fonts/LibreFranklin-Medium.ttf');
+    src: url('fonts/LibreFranklin-Medium.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5%;
+    font-family: 'Libre Franklin';
+    font-weight: bold;
+    background-color: #F5F0E9;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 5rem;
+    font-size: 52px;
+    margin-top: 1rem;
+    color: #6D7A71;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 1rem;
+    color: #BC7F6A;
+}
+
+
+h1.subheading {
+    font-size: 36px;
+    font-family: 'Libre Franklin';
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Libre Franklin';
+    text-align: left;
+    font-size: 24px;
+}
+
+h2.name {
+    font-family: 'Libre Franklin';
+    text-align: center;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Libre Franklin';
+    text-align: left;
+    font-size: 20px;
+    background-color: rgb(221, 221, 221);
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+a:hover {
+    color: black;
+    transition-duration: 400ms;
+    text-decoration: underline;
+    background-color: rgb(172, 172, 172);
+}
+
+.heroImage {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 6rem;
+}
+
+img.heroImg {
+    width: 100%;
+    min-width: 400px;
+}
+
+.container {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 6rem;
+}
+
+p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 2rem;
+    color: rgb(73, 73, 73);
+    border-left-width: 2px;
+    border-left-style: solid;
+    padding: 15px;
+    font-family: 'Libre Franklin';
+    font-weight: normal;
+}
+
+p.caption {
+    border-left-width: none;
+    border-left-style: none;
+    font-size: 14px;
+}
+
+ul {
+    text-align: left;
+    font-size: 18px;
+    line-height: 2rem;
+    color: rgb(73, 73, 73);
+    border-left-width: 2px;
+    border-left-style: solid;
+    padding: 15px;
+    font-family: 'Libre Franklin';
+    font-weight: normal;
+    list-style: none;
+}
+
+li.indent {
+    padding-left: 4rem;
+}
+
+li.thought {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+#wireframeContainer {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wireframe {
+    width: 22%;
+    padding: 0px 10px;
+}

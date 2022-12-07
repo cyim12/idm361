@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+    <link rel="normalize" href="normalize.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="heading">
+        <h2>IDM241 - Christine Yim</h2>
+        <h1>PomoFocus Case Study</h1>
+    </div>
+    <div class="heroImage">
+        <img class="heroImg" src="imgs/heroImg.png" alt="hero_image">
+    </div>
+    <div class="container" id="overview">
+        <h3 class="subheading">Overview</h3>
+        <p>In the Interactive App Design I class (IDM361), the term project was to create a web app in a span of 11 weeks. Taking into consideration the mobile web app real estate, low bandwidth to no internet access, as well as touchscreen functions, it was important to optimize user experience given a few limitations. It was also important to make sure the user interface was enticing, as it would be a factor to sustained use of the application. A useful and practical application that came to mind was a study and work-centered timer. Utilizing the Pomodoro Technique, PomoFocus is an aesthetic timer with three timer options: Pomodoro which is a 25 minute timer for study sessions, Short Break which is a 5 minute timer, and Long Break which is a 20 minute timer. This web application was created in four phases: pre-alpha, alpha, beta, and final. Each phase included incremental enhancements to the previous versions. In regards to user experience considerations, the main content fills up more than half the real estate of both portrait and landscape views, an information modal on how to use the application appears once users click on the information icon on the top right corner of the content, and indicative visuals were incorporated to allow users to successfully use the application.
+        </p>
+    </div>
+    <div class="container" id="contextchallenge">
+        <h3>Context</h3>
+        <p>Students typically stress over their workload and find it difficult to manage their time. This could further lead to potential procrastination or laziness. With this in mind, designing and developing a study timer web application seemed to be a natural decision. As mentioned earlier, the Pomodoro Technique involves working without distractions in intervals. The original technique involves a total of six steps in which a person plans a task, sets the pomodoro timer for 25 minutes, works on the task, takes a short break of 5-10 minutes, repeat steps 2 to 4 for three more times, and once the four pomodoros are completed, the person is able to take a long break of 20-30 minutes.
+        </p>
+        </div>
+    <div class="container">
+        <h3>Description</h3>
+        <p>PomoFocus is a web application that can work online and offline. Users are given three different timer options that are based on the original Pomodoro Technique. The first option is Pomodoro that auto sets the timer to 25 minutes for users to work and study for that duration without any distractions. The second option is Short Break in which users are given 10 minutes to take a break and the third option is Long Break in which users are given 20 minutes to take a break. Users may pause or reset the timer as they please.
+        </p>
+    </div>
+    <div class="container">
+        <h3>Goals & Objectives</h3>
+        <ul>
+            <li>• Build a functional and practical web application that can work online and offline
+            </li>
+            <li>• Design an engaging and unique web app interface
+            </li>
+            <li>• Learn and utilize Apple supported meta tags for web app
+            </li>
+            <li>• Consider any limitations or restrictions of potential users to enhance overall user experience
+            </li>
+            <li class="indent">
+                ◦ Mobile web app real estate
+            </li>
+            <li class="indent">
+                ◦ Low bandwidth & no internet access
+            </li>
+            <li class="indent">
+                ◦ Available touchscreen functions
+            </li>
+        </ul>
+    </div>
+    <div class="container" id="processinsight">
+        <h3>Process</h3>
+        <p>Upon the finalization of the initial idea of building a study timer, the target audience was defined to be students in general. That being said, I wanted to make sure that the aesthetic of PomoFocus was enticing enough for sustained use. The process of this project began with learning different web app functionalities using lines of code to include for the web app during the first few weeks. During this time, I created the wireframes for PomoFocus and a stylesheet defining colors and fonts. The next phase of the process was building the Pre-Alpha, Alpha, and Beta versions of PomoFocus. As mentioned earlier, each version was an improved version from the previous one.</p>
+    </div>
+    <div class="container" id="processinsight">
+        <h3>Design</h3>
+        <p>While creating the wireframes, I was able to explore different color options and font choices. Upon finalizing the colors and fonts, I created a simple stylesheet for me to reference while building the web app. Another important design element of this project was the Apple Touch Icon. This icon would be shown when the user is in the process of adding the web app to their home screen as well as on the home screen itself.
+        </p>
+        <div>
+            <img id="stylesheet" src="imgs/Stylesheet.png">
+            <img id="touchIcon" src="imgs/web-app-icon.png">
+        </div>
+    </div>
+    <div class="container">
+        <h3>Wireframes</h3>
+        <p>Before jumping into developing the web app, it was important to make detailed wireframes for every screen of the web app. This included clearly defining the content within the web app, adding any necessary dimensions, buttons, text, etc.
+        </p>
+        <div id="wireframeContainer">
+            <img src="/imgs/PomoFocus_P_1 copy.jpg" class="wireframe">
+            <img src="/imgs/PomoFocus_P_2 copy.jpg" class="wireframe">
+            <img src="/imgs/PomoFocus_P_3 copy.jpg" class="wireframe">
+            <img src="/imgs/PomoFocus_P_4 copy.jpg" class="wireframe">
+        </div>
+    </div>
+    <div class="container">
+        <h3>Development</h3>
+        <p>In terms of learning code, I was able to implement various important functionalities for PomoFocus to look like a web app once the users added it to their home screen. The functionalities that I learned and coded into PomoFocus are listed below:
+        </p>
+        <ul>
+            <li>• Content changing when in portrait view versus in landscape view.
+            </li>
+            <li class="indent">
+                ◦ This was to ensure that the users could use the web app in the proper orientation of their devices
+            </li>
+            <br>
+            <li>• Status bar style changes to black once added to user’s home screen
+            </li>
+            <br>
+            <li>• Add to home modal (add2home)
+            </li>
+            <li class="indent">
+                ◦ The modal would let the users know that they would be able to click the share button and then add the web app to their home screen. There were options to animate the way the modal appeared on the screen. The modal would also appear automatically after 2 seconds upon viewing or refreshing the link and disappear after 15 seconds. On top of this functionality, a line of code in the meta tag also allowed for the web app to be given a title when the user added it to the home screen.
+            </li>
+            <br>
+            <li>• Touch icon implementation
+            </li>
+            <li class="indent">
+                ◦ With the touch icon that I had designed with the proper dimensions and branding, I exported a 1024x1024px PNG file of the icon to the website https://appicon.co/. This website generated 20 different app icon sizes that would be compatible with various devices.
+            </li>
+            <br>
+            <li>• Cache manifest
+            </li>
+            <li class="indent">
+                ◦ The cache manifest file is a text file that includes a list of all of the files of code and resources within the web app so that the browser could cache it offline. With this file, I was able to update and upload each version of the cache manifest and the browser was able to scan which resource was added or updated. Upon this, if there were any changes to the recent cache manifest from the previous one, a modal would appear that gave users the option to use the most updated version of the web app.
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h3>Pre-Alpha</h3>
+        <p>In the Pre-Alpha version of PomoFocus, a detailed realization of the wireframes had been coded using HTML, CSS, and Javascript. This version also included the proper styling of colors and fonts. The Add2Home feature was also implemented in which a modal appears towards the bottom center of the screen. I also made sure that the web app was able to be added to the screen.
+        </p>
+    </div>
+    <div class="container">
+        <h3>Beta</h3>
+        <p>The Alpha version of PomoFocus had most of the main functionalities implemented using Javascript. This would include the countdown, switching between timer options, reset functionality, stop functionality, modal functionality, and overlay functionality.
+        </p>
+    </div>
+    <div class="container">
+        <h3>Final</h3>
+        <p></p>
+        <div id="finalLinkBtn">
+            <button>FINAL</button>
+        </div>
+    </div>
+    <div class="container" id="results">
+        <h3>Results</h3>
+        <p></p>
+    </div>
+
+    </body>
